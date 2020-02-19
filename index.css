@@ -1,0 +1,70 @@
+.barlabel {
+  font: 10px sans-serif;
+  fill: lightgrey;
+}
+.bar {
+  fill: steelblue;
+}
+  .bar:hover{
+  fill: olive;
+}
+.barHighlighted {
+  fill: olive;
+}
+path.domain{
+    stroke: black;
+    stroke-width: 0.3px;
+    fill: none;
+}
+path {
+    stroke: white;
+    stroke-width: 0.5px;
+    fill: black;
+}
+.route {
+    stroke: red;
+    stroke-width: 1px;
+    fill: none;
+    pointer-events: none;
+}
+.neighborhood {
+    stroke: black;
+    cursor:pointer;
+}
+
+.neighborhood:active, .neighborhood:hover {
+  fill:orange !important;
+  stroke:white;
+  stroke-width: 2px;
+}
+.selector {
+  cursor: pointer;
+}
+.commarea {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+.commarea:hover {
+    fill: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+.legend {
+  font-size: 12px;
+}
+div.tooltip {
+    pointer-events: none;
+    color: #222;
+    background-color: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    opacity: 0.9;
+    position: absolute;
+    font: 12px sans-serif;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Chicago Transit Network</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+
+	    <script src="http://d3js.org/d3.v4.min.js"></script>
+	    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	    <script src="polyline.js"></script>
+	    <script src="map.js"></script>
+	    <script src="sideMap.js"></script>
+	    <script src="projectBarChart.js"></script>
+	    <script src="censusData.csv.js"></script>
+
+	</head>
+	<body onload="transitClicked()">
+		<button onclick="cycleClicked()">cycle</button>
+		<button onclick="transitClicked()">transit</button>
+		<p></p>
+		<svg id="main" style ="vertical-align: top"></svg>
+		<svg id="side" style="vertical-align: top"></svg>
+		<div id="barChartDiv" style="overflow:scroll; height:550px; display:inline-flex">
+			<svg id="barChart"></svg>
+		</div>
+	    <script src="index.js"></script>
+	</body>
+</html>
